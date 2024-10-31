@@ -1,0 +1,686 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", system-ui;
+}
+
+#about .entete,
+#menu .entete{
+    margin: 3rem 0;
+}
+
+.entete .part{
+    color: rgb(100, 100, 105);
+    font-size: 14px;
+}
+
+.entete h2{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 3rem;
+}
+
+.entete h2 span{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 3rem;
+    color: rgb(206, 18, 18);
+}
+
+/* ----Ensemble---- */
+.header .navbar{
+    position: relative;
+    height: 15vh;
+    background-color: white;
+}
+
+.navbar .navbar-brand{
+    font-size: 28px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.navbar-brand span{
+    color: rgb(206, 18, 18);
+}
+
+.navbar .navbar-nav{
+    gap: 20px;
+}
+
+.navbar-nav .nav-link{
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(78, 78, 89);
+    position: relative;
+}
+
+.nav-link::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(206, 18, 18);
+    transition: 0.2s;
+}
+
+.nav-link:hover:before,
+.nav-link .active{
+    width: 100%;
+}
+
+.navbar .btn{
+    background-color: rgb(206, 18, 18);
+    border-radius: 20px;
+    color: white;
+    font-size: 13px;
+    padding: 8px 15px;
+}
+
+.navbar-nav .btn:hover{
+    border: 1px solid rgb(206, 18, 18) !important;
+}
+
+/* ----Home---- */
+#home{
+    /* height: 90vh; */
+    background-color: rgb(242, 242, 242);
+}
+
+#home h1{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 4.1rem;
+    font-weight: 700;
+}
+
+#home p{
+    font-size: 20px;
+    width: 80%;
+    color: rgb(78, 78, 89);
+}
+
+.boutton a{
+    background-color: rgb(206, 18, 18);
+    border-radius: 25px;
+    color: white;
+    font-size: 17px;
+    width: 9rem;
+    height: 8vh;
+}
+
+.boutton a:nth-child(2){
+    background-color: rgb(242, 242, 242);
+    color: rgb(44, 44, 46);
+    font-size: 16px;
+    width: 12rem;
+    font-weight: 500;
+}
+
+.boutton a i{
+    font-size: 30px;
+    color: rgb(206, 18, 18);
+}
+
+#home .accueil-image{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accueil-image img{
+    width: 28rem;
+}
+
+
+/* ----About---- */
+
+#about{
+    margin: 4rem 0;
+}
+
+#about .bande{
+    margin: 1rem 0;
+    width: 100%;
+    height: 20vh;
+    border: 3px solid rgb(44, 44, 46);
+}
+
+.bande h4{
+    position: relative;
+    bottom: -15px;
+    font-weight: 600;
+}
+
+.bande .numero{
+    font-size: 2rem;
+    color: rgb(206, 18, 18);
+    font-weight: 500;
+}
+
+#about .text-about{
+    font-style: italic;
+    color: rgb(100, 100, 105);
+}
+
+#about ul{
+    list-style: none;
+}
+
+#about ul li{
+    margin: 1rem 0;
+    font-size: 17px;
+}
+
+#about ul li i{
+    margin-right: 10px;
+    color: rgb(206, 18, 18);
+    font-size: 20px;
+}
+
+.about-image i{
+    position: absolute;
+    color: rgb(206, 18, 18);
+    font-size: 4.5rem;
+}
+
+
+#about .choose{
+    margin-top: 5rem;
+    background-color: rgb(242, 242, 242);
+}
+
+
+#about .choose .bloc-about,
+#about .choose .about-bloc{
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0px 15px;
+}
+
+.choose .bloc-about{
+    width: 22rem;
+    gap: 25px;
+    background-color: rgb(206, 18, 18);
+    color: white;
+}
+
+.bloc-about h3{
+    font-size: 2.5rem;
+}
+
+.bloc-about a{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    color: white;
+    background-color: rgba(245, 245, 245, 0.169);
+}
+
+
+.choose .about-bloc{
+    align-items: center;
+    text-align: center;
+    background-color: white;
+}
+
+.about-bloc i{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(206, 18, 18, 0.105);
+    font-size: 20px;
+    color: rgb(206, 18, 18);
+}
+.about-bloc h3{
+    font-size: 1.6rem;
+}
+
+.about-bloc p{
+    color: rgb(100, 100, 105);
+}
+
+#about .rapport{
+    height: 65vh;
+    justify-content: space-evenly;
+    background: url(beans-1834984_1280.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+}
+
+.rapport::before{
+    content: '';
+    background-color: rgba(11, 11, 11, 0.484);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.rapport .col-6{
+    position: relative;
+    z-index: 2;
+}
+
+.rapport h3{
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.rapport p{
+    color: rgba(218, 218, 218, 0.865);
+    font-size: 1.3rem;
+}
+
+/* ----Menu---- */
+#menu{
+    margin: 3rem 0;
+}
+
+.header-menu .nav{
+    gap: 20px;
+}
+
+.header-menu .nav-link{
+    position: relative;
+    color: rgba(11, 11, 11, 0.927);
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.header-menu .nav-link::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    z-index: 2;
+    left: 0;
+    background-color: rgb(206, 18, 18);
+    transition: 0.2s;
+}
+
+.header-menu .nav-link::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(123, 123, 123, 0.514);
+}
+
+.header-menu .nav-link:hover:before{
+    width: 100%;
+}
+
+.header-menu .entete h2 span{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(206, 18, 18);
+}
+
+#menu .bloc-menu{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bloc-menu img{
+    width: 15rem;
+    margin-bottom: 15px;
+}
+
+.bloc-menu h4{
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.bloc-menu p{
+    font-size: 17px;
+    color: rgb(100, 100, 105);
+    letter-spacing: 1px;
+}
+
+.bloc-menu h5{
+    position: relative;
+    top: -10px;
+    font-size: 25px;
+    color: rgb(206, 18, 18);
+    font-weight: 600;
+}
+
+.testimonials{
+    padding: 1.5rem 0;
+    background-color: rgb(242, 242, 242);
+}
+
+.temoins .temoin{
+    width: 80%;
+    margin: auto;
+    gap: 15px;
+    padding: 0 30px;
+    border-left: 2px solid rgb(206, 18, 18);
+}
+
+.temoin .details-test{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.details-test p{
+    font-size: 17px;
+    color: rgb(100, 100, 105);
+    font-style: italic;
+}
+
+.details-test i{
+    margin: 0 10px;
+    color: rgba(206, 18, 18, 0.744);
+}
+
+.name-pro h4,
+.name-pro h6{
+    font-family: "Amatic SC", sans-serif;
+}
+
+.name-pro h4{
+    font-weight: 600;
+}
+
+.temoin .img-fluid{
+    width: 12rem;
+    border-radius: 50%;
+}
+
+.point{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.point i{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(11, 11, 11, 0.295);
+}
+
+/* ----Event---- */
+#event .event-content{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border: 1px solid white;
+    color: white;
+    position: relative;
+}
+
+.event-content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11, 11, 11, 0.658);
+    z-index: 1;
+}
+
+.event-content .content{
+    position: relative;
+    z-index: 2;
+}
+
+.event-content:nth-child(1){
+    background: url('wedding-1353829_1280.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.event-content:nth-child(2){
+    background: url('event-6927353_1280.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.event-content:nth-child(3){
+    background: url('woman-4081760_1280.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content h4{
+    font-family: "Amatic SC", sans-serif;
+}
+
+.content h2{
+    font-weight: 700;
+    position: relative;
+}
+
+.content h2::before{
+    position: absolute;
+    content: '';
+    bottom: -5px;
+    left: 0;
+    width: 4.5rem;
+    height: 2px;
+    background-color: rgb(206, 18, 18);
+}
+
+/* ----chefs---- */
+#chefs{
+    margin: 5rem 0;
+}
+
+.chefs .card{
+    border: 0;
+}
+
+.card .wave{
+    position: absolute;
+    top: 18rem;
+    filter: invert(1) brightness(2);
+}
+
+@media (max-width: 700px){
+    .card .wave{
+        top: 23rem;
+    }
+}
+
+.chefs .card-body h6{
+    font-size: 14px;
+    color: rgb(78, 78, 89);
+}
+
+.chefs .card-body p{
+    font-size: 13px;
+    font-style: italic;
+    color: rgb(78, 78, 89);
+    margin-bottom: 1rem;
+}
+
+#chefs .commande{
+    margin: 4rem 0;
+}
+
+.commande .card{
+    border-radius: 0;
+    background-color: rgb(242, 242, 242);
+    border: 0;
+    margin: 3rem 0;
+}
+
+.commande form input{
+    border-radius: 0;
+}
+
+.commande textarea{
+    border-radius: 0;
+}
+
+.commande form button{
+    width: 15rem;
+    padding: 15px 0;
+    font-size: 20px;
+    background-color: rgb(206, 18, 18);
+    color: white;
+}
+
+.commande form button:hover{
+    border: 1px solid rgb(206, 18, 18);
+}
+
+/* ----gallery---- */
+.gallery-image{
+    padding: 3rem 0;
+    width: 100%;
+    background-color: rgb(242, 242, 242);
+}
+
+.gallery-image .my-gallery{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 2rem 0;
+}
+
+.my-gallery .active{
+    width: 55rem;
+    padding: 5px;
+    border: 5px solid rgb(206, 18, 18);
+}
+
+/* ----Contact---- */
+#contact{
+    margin: 5rem 0;
+}
+
+#contact .maps{
+    margin: 4rem 0;
+    height: 70vh;
+}
+
+.maps iframe{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.coordonnes .bloc-contact{
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    gap: 20px;
+}
+
+.bloc-contact i{
+    font-size: 26px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(206, 18, 18);
+    color: white;
+}
+
+.bloc-contact .contact-bloc{
+    position: relative;
+    top: 8px;
+}
+
+.contact-bloc h3{
+    font-size: 1.5rem;
+}
+
+#contact form input,
+#contact form textarea{
+    border-radius: 0;
+}
+
+#contact form button{
+    width: 10rem;
+    padding: 10px 0;
+    border-radius: 25px;
+    color: white;
+    background-color: rgb(206, 18, 18);
+}
+
+
+/* ----footer---- */
+footer{
+    margin-top: 4rem;
+    background-color: rgb(31, 31, 36);
+    padding: 2rem 0;
+}
+
+.bloc-footer{
+    display: flex;
+    gap: 15px;
+    color: white;
+}
+
+.bloc-footer i{
+    color: rgb(206, 18, 18);
+    font-size: 25px;
+}
+
+.footer-bloc .footer-sociaux{
+    display: flex;
+    gap: 10px;
+}
+
+.footer-sociaux i{
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+}
+
+footer hr{
+    background-color: whitesmoke;
+    height: 2px;
+    margin: 1rem 0;
+}
+
+.last h5{
+    color: white;
+    font-size: 16px;
+}
+
+.last h6{
+    font-size: 12px;
+    color: white;
+}
+
+.last h6 span{
+    color: rgb(206, 18, 18);
+}
